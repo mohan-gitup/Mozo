@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoZo: Collections</title>
+    <link rel="icon" href="images/Mozo logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google fonts     -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- My css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Awesome fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav style="margin-top: 0%;" class="navbar">
+        <h1 style="color: yellow;">Mozo</h1>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle">
+            <i class="fa-solid fa-bars" onclick="shownavbar()"></i>
+        </div>
+    </nav>
+
+    <!-- side navbar -->
+    <div class="side-navbar">
+        <p style="text-align: right; cursor: pointer;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+
+
+    <!-- collection -->
+    <div class="product-section">
+        <form class="product-search">
+            <input onkeyup="check(event)" type="text" id="search" placeholder="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+    </div>
+
+    <!-- products -->
+    <div class="products" id="products">
+        <div class="productbox">
+            <a href="https://www.ajio.com/men-caps-hats/c/830202001?query=%3Arelevance&classifier=intent">
+                <img src="images/caps.webp" alt="">
+            </a>
+            <h5>Caps</h5>
+        </div>
+        <div class="productbox">
+            <a href="https://www.ajio.com/s/flip-flops-4063-31521?query=:relevance&classifier=intent">
+                <img src="images/flip flop.avif" alt="">
+            </a>
+            <h5>flip-flop</h5>
+        </div>
+        <div class="productbox">
+            <a href="https://www.ajio.com/women-sarees/c/830303008?query=:relevance&classifier=intent">
+                <img src="images/saree.avif" alt="">
+            </a>
+            <h5>Sarees</h5>
+        </div>
+        <div class="productbox">
+            <a href="https://www.ajio.com/search/?text=women%20shorts">
+                <img src="images/women shorts.avif" alt="">
+            </a>
+            <h5>Women shorts</h5>
+        </div>
+        <div class="productbox">
+            <a href="https://www.ajio.com/search/?text=mens%20trackpant">
+                <img src="images/mens trackpant.avif" alt="">
+            </a>
+            <h5>Mens Trackpants</h5>
+        </div>
+        <div class="productbox">
+            <a href="https://www.ajio.com/s/shirts-for-men-5077-55971?query=:relevance&classifier=intent">
+                <img src="images/mens shirts.avif" alt="">
+            </a>
+            <h5>Mens Shirts</h5>
+        </div>
+        <div class="productbox">
+            <a href="https://www.ajio.com/search/?text=women%20kurthis">
+                <img src="images/kurthis.avif" alt="">
+            </a>
+            <h5>Women kurthis</h5>
+        </div>
+        <div class="productbox">
+            <a href="https://www.ajio.com/search/?text=t%20shirts">
+                <img src="images/tshirts.avif" alt="">
+            </a>
+            <h5>Mens Tshirts</h5>
+        </div>
+        <div class="productbox">
+            <a href="https://www.ajio.com/search/?text=watches">
+                <img src="images/watches.avif" alt="">
+            </a>
+            <h5>Watches</h5>
+        </div>
+        <div class="productbox">
+            <a href="https://www.ajio.com/search/?text=hoodies">
+                <img src="images/hoodie.avif" alt="">
+            </a>
+            <h5>Hoodies</h5>
+        </div>
+        <div class="productbox">
+            <a href="https://www.ajio.com/s/jeans-3571-88891?query=:relevance&classifier=intent">
+                <img src="images/jeans.avif" alt="">
+            </a>
+            <h5>Jeans</h5>
+        </div>
+        <div class="productbox">
+            <a href="https://www.ajio.com/search/?text=cargos">
+                <img src="images/cargos.avif" alt="">
+            </a>
+            <h5>Cargos</h5>
+        </div>
+        <div class="productbox">
+            <a href="https://www.ajio.com/search/?text=mens%20inner">
+                <img src="images/mens inner.avif" alt="">
+            </a>
+            <h5>Mens Inners</h5>
+        </div>
+        <div class="productbox">
+            <a href="https://www.ajio.com/search/?text=cotton%20pants">
+                <img src="images/cotton pants.avif" alt="">
+            </a>
+            <h5>Cotton Pants</h5>
+        </div>
+
+        <div class="productbox">
+            <a href="https://www.ajio.com/search/?text=anarkali">
+                <img src="images/anarkali.avif" alt="">
+            </a>
+            <h5>Anarkalis</h5>
+        </div>
+
+        <div class="productbox">
+            <a href="https://www.ajio.com/search/?text=weshti">
+                <img src="images/dhoti.avif" alt="">
+            </a>
+            <h5>Dhotis</h5>
+        </div>
+
+        <div class="productbox">
+            <a href="https://www.ajio.com/search/?text=lahanga">
+                <img src="images/lehenga.avif" alt="">
+            </a>
+            <h5>Lehengas</h5>
+        </div>
+
+        <div class="productbox">
+            <a href="https://www.ajio.com/s/casual-shoes-3571-88891?query=:relevance&classifier=intent">
+                <img src="images/casual shoes.avif" alt="">
+            </a>
+            <h5>Casual Shoes</h5>
+        </div>
+
+        <div class="productbox">
+            <a href="https://www.ajio.com/s/formal-shoes-4271-38471?query=:relevance&classifier=intent">
+                <img src="images/formal shoes.avif" alt="">
+            </a>
+            <h5>Formal Shoes</h5>
+        </div>
+
+        <div class="productbox">
+            <a href="https://www.ajio.com/search/?text=belts">
+                <img src="images/belts.avif" alt="">
+            </a>
+            <h5>Belts</h5>
+        </div>
+
+
+    </div>
+
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <h2>MoZo</h2>
+        <p>The Standard chunk of Lorem ipsum used since the 2002s is reproduced below for those intrest</p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <p>@ 2024 MoZo.com</p>
+    </div>
+
+
+
+    <script src="collection.js"></script>
+    <script src="index.js"></script>
+
+
+
+</body>
+
+</html>

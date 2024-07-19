@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoZo: Contact</title>
+    <link rel="icon" href="images/Mozo logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google fonts     -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- My css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Awesome fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 style="color: yellow;">Mozo</h1>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle">
+            <i class="fa-solid fa-bars" onclick="shownavbar()"></i>
+        </div>
+    </nav>
+
+    <!-- side navbar -->
+    <div class="side-navbar">
+        <p style="text-align: right; cursor: pointer;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+
+
+    <div class="head">
+        <div class="contact">
+            <form>
+                <h2>Contact Us</h2>
+                <p>Name:</p>
+                <input type="text">
+                <p>Email:</p>
+                <input type="text">
+                <p>Message:</p>
+                <textarea></textarea>
+                <div class="submit">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <h2>MoZo</h2>
+        <p>The Standard chunk of Lorem ipsum used since the 2002s is reproduced below for those intrest</p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <p>@ 2024 MoZo.com</p>
+    </div>
+
+
+
+    <script src="collection.js"></script>
+    <script src="index.js"></script>
+
+
+
+</body>
+
+</html>
